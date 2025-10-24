@@ -1,7 +1,6 @@
 
-from sqlalchemy import Column, String, ForeignKey, ARRAY, DateTime
+from sqlalchemy import Column, String, ARRAY, DateTime
 from sqlalchemy.dialects.postgresql import UUID 
-from sqlalchemy.orm import relationship
 from datetime import datetime
 import uuid
 from ..database import Base
@@ -11,6 +10,8 @@ from ..database import Base
 class ProductModel(Base):
     __tablename__ = "product_models"
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    sku = Column(String, unique=True, nullable=True)
+    title = Column(String, nullable=False)
     code = Column(String, unique=True, nullable=False)
     family_variant_id = Column(UUID(as_uuid=True), nullable=True)
     parent_id = Column(UUID(as_uuid=True), nullable=True)

@@ -7,7 +7,11 @@ from src.endpoints.families import router as families_router
 router = APIRouter()
 
 # Include all endpoint routers
-router.include_router(products_router)
+router.include_router(
+    products_router,
+    prefix="/api/v1/product-models",
+    tags=["Product Models"]
+    )
 router.include_router(categories_router)
 router.include_router(attributes_router)
 router.include_router(families_router)

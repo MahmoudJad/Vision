@@ -1,8 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, func
-from sqlalchemy.orm import selectinload
-from typing import List
 from uuid import UUID
 import math
 
@@ -15,12 +13,12 @@ from ..schemas.product_model import (
     ProductModelListResponse
 )
 
-router = APIRouter(prefix="/api/v1/product-models", tags=["Product Models"])
+router = APIRouter()
 
 
-@router.post("/", response_model=ProductModelResponse, status_code=201)
+@router.post("/create", response_model=ProductModelResponse, status_code=201)
 async def create_product_model(
-    product_model_data: ProductModelCreate,
+    payload: ProductModelCreate,
     db: AsyncSession = Depends(get_db)
 ):
     """
@@ -33,22 +31,24 @@ async def create_product_model(
     """
     try:
         # Check if code already exists
-        existing_query = select(ProductModel).where(ProductModel.code == product_model_data.code)
+        existing_query = select(ProductModel).where(ProductModel.code == payload.code)
         existing_result = await db.execute(existing_query)
         existing_product = existing_result.scalar_one_or_none()
         
         if existing_product:
             raise HTTPException(
                 status_code=400,
-                detail=f"Product model with code '{product_model_data.code}' already exists"
+                detail=f"Product model with code '{payload.code}' already exists"
             )
         
         # Create new product model
         product_model = ProductModel(
-            code=product_model_data.code,
-            family_variant_id=product_model_data.family_variant_id,
-            parent_id=product_model_data.parent_id,
-            category_ids=product_model_data.category_ids or []
+            code=payload.code,
+            title=payload.title,
+            sku=payload.sku,
+            family_variant_id=payload.family_variant_id,
+            parent_id=payload.parent_id,
+            category_ids=payload.category_ids or []
         )
         
         db.add(product_model)

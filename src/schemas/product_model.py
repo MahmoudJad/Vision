@@ -14,12 +14,14 @@ class ProductModelBase(BaseModel):
 
 class ProductModelCreate(ProductModelBase):
     """Schema for creating a new ProductModel"""
-    pass
+    title: str = Field(..., description="Title of the product model", example="iPhone 16")
+    sku: Optional[str] = Field(None, description="Stock Keeping Unit for the product model", example="SKU12345")
 
 
 class ProductModelUpdate(BaseModel):
     """Schema for updating an existing ProductModel"""
     code: Optional[str] = Field(None, description="Unique code for the product model")
+    title: Optional[str] = Field(None, description="Title of the product model")
     family_variant_id: Optional[UUID] = Field(None, description="ID of the family variant")
     parent_id: Optional[UUID] = Field(None, description="ID of the parent product model")
     category_ids: Optional[List[UUID]] = Field(None, description="List of category IDs")
@@ -28,6 +30,7 @@ class ProductModelUpdate(BaseModel):
 class ProductModelResponse(ProductModelBase):
     """Schema for ProductModel response"""
     id: UUID = Field(..., description="Unique identifier for the product model")
+    title: str = Field(..., description="Title of the product model")
     created_at: datetime = Field(..., description="Timestamp when the product model was created")
     updated_at: datetime = Field(..., description="Timestamp when the product model was last updated")
 
