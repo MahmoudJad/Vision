@@ -108,4 +108,10 @@ docker-compose -f docker/docker-compose.yml down
 
 # Rebuild and restart
 docker-compose -f docker/docker-compose.yml up --build -d
+
+# Create a new migration file 
+docker-compose -f docker/docker-compose.yml exec vision alembic revision --autogenerate -m "migration file name"
+
+# Apply the new migration 
+docker-compose -f docker/docker-compose.yml exec vision alembic upgrade head
 ```
