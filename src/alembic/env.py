@@ -17,7 +17,8 @@ from src.model.family import Family
 from src.model.family_variants import FamilyVariant
 from src.model.parent_product import ProductModel
 from src.model.attributes import Attribute, AttributeOption
-# Note: category.py and attribute.py are currently empty
+from src.model.product_values import ProductValue
+# Note: category.py is currently empty
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
