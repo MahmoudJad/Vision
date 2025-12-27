@@ -2,6 +2,10 @@ from fastapi import FastAPI
 from src.config import settings
 import uvicorn
 from src.routers import router
+from src.database import import_models
+
+# Import all models to register them with SQLAlchemy
+import_models()
 
 app = FastAPI(
     title=settings.APP_NAME,
