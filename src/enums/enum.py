@@ -10,6 +10,9 @@ class AttributeType(PyEnum):
     DATE = "date"
     PRICE = "price"
     IMAGE = "image"
+    IMAGES = "gallery"
+    MEASUREMENT = "measurement"
+
 
 
 class BackendType(PyEnum):

@@ -21,6 +21,14 @@ AsyncSessionLocal = async_sessionmaker(
 # Create base class for models
 Base = declarative_base()
 
+# Import all models to register them with Base
+def import_models():
+    """Import all models to ensure they are registered with SQLAlchemy"""
+    from src.model import (
+        Attribute, AttributeOption, ProductValue, 
+        Product, ProductModel, Family, FamilyVariant
+    )
+
 # Dependency to get database session
 async def get_db():
     async with AsyncSessionLocal() as session:

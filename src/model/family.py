@@ -10,3 +10,4 @@ class Family(Base):
     id = Column(PG_UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     code = Column(String, unique=True, nullable=False)
     attribute_ids = Column(ARRAY(PG_UUID(as_uuid=True)))
+    labels = Column(ARRAY(String), nullable=True)  # e.g., {"en_US": "Clothing", "fr_FR": "Vêtements"}

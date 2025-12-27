@@ -24,7 +24,7 @@ class Attribute(Base):
 
     options = relationship("AttributeOption", back_populates="attribute", cascade="all, delete-orphan")
     # Note: ProductValue relationship commented out temporarily to avoid circular import
-    # values = relationship("ProductValue", back_populates="attribute", cascade="all, delete-orphan")
+    values = relationship("ProductValue", back_populates="attribute", cascade="all, delete-orphan")
 
 
 class AttributeOption(Base):
