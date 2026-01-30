@@ -1,0 +1,122 @@
+[
+  {
+    "id": "660e8400-e29b-41d4-a716-446655440001",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440003",
+    "code": "red",
+    "labels": {
+      "en_US": "Red",
+      "ar_EG": "أحمر"
+    },
+    "sort_order": "1"
+  },
+  {
+    "id": "660e8400-e29b-41d4-a716-446655440002",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440003",
+    "code": "blue",
+    "labels": {
+      "en_US": "Blue",
+      "ar_EG": "أزرق"
+    },
+    "sort_order": "2"
+  },
+  {
+    "id": "660e8400-e29b-41d4-a716-446655440003",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440003",
+    "code": "black",
+    "labels": {
+      "en_US": "Black",
+      "ar_EG": "أسود"
+    },
+    "sort_order": "3"
+  },
+  {
+    "id": "660e8400-e29b-41d4-a716-446655440004",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440003",
+    "code": "white",
+    "labels": {
+      "en_US": "White",
+      "ar_EG": "أبيض"
+    },
+    "sort_order": "4"
+  },
+  {
+    "id": "660e8400-e29b-41d4-a716-446655440005",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440004",
+    "code": "xs",
+    "labels": {
+      "en_US": "XS",
+      "ar_EG": "صغير جداً"
+    },
+    "sort_order": "1"
+  },
+  {
+    "id": "660e8400-e29b-41d4-a716-446655440006",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440004",
+    "code": "s",
+    "labels": {
+      "en_US": "S",
+      "ar_EG": "صغير"
+    },
+    "sort_order": "2"
+  },
+  {
+    "id": "660e8400-e29b-41d4-a716-446655440007",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440004",
+    "code": "m",
+    "labels": {
+      "en_US": "M",
+      "ar_EG": "متوسط"
+    },
+    "sort_order": "3"
+  },
+  {
+    "id": "660e8400-e29b-41d4-a716-446655440008",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440004",
+    "code": "l",
+    "labels": {
+      "en_US": "L",
+      "ar_EG": "كبير"
+    },
+    "sort_order": "4"
+  },
+  {
+    "id": "660e8400-e29b-41d4-a716-446655440009",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440004",
+    "code": "xl",
+    "labels": {
+      "en_US": "XL",
+      "ar_EG": "كبير جداً"
+    },
+    "sort_order": "5"
+  },
+  {
+    "id": "660e8400-e29b-41d4-a716-446655440010",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440008",
+    "code": "cotton",
+    "labels": {
+      "en_US": "Cotton",
+      "ar_EG": "قطن"
+    },
+    "sort_order": "1"
+  },
+  {
+    "id": "660e8400-e29b-41d4-a716-446655440011",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440008",
+    "code": "polyester",
+    "labels": {
+      "en_US": "Polyester",
+      "ar_EG": "بوليستر"
+    },
+    "sort_order": "2"
+  },
+  {
+    "id": "660e8400-e29b-41d4-a716-446655440012",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440008",
+    "code": "silk",
+    "labels": {
+      "en_US": "Silk",
+      "ar_EG": "حرير"
+    },
+    "sort_order": "3"
+  }
+]

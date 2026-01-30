@@ -1,0 +1,178 @@
+[
+  {
+    "entity_type": "PRODUCT_MODEL",
+    "entity_id": "aa0e8400-e29b-41d4-a716-446655440001",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440001",
+    "scope": null,
+    "locale": "en_US",
+    "value": "Classic T-Shirt"
+  },
+  {
+    "entity_type": "PRODUCT_MODEL",
+    "entity_id": "aa0e8400-e29b-41d4-a716-446655440001",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440001",
+    "scope": null,
+    "locale": "ar_EG",
+    "value": "تيشيرت كلاسيكي"
+  },
+  {
+    "entity_type": "PRODUCT_MODEL",
+    "entity_id": "aa0e8400-e29b-41d4-a716-446655440001",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440002",
+    "scope": "ecommerce",
+    "locale": "en_US",
+    "value": "A comfortable classic t-shirt for everyday wear"
+  },
+  {
+    "entity_type": "PRODUCT_MODEL",
+    "entity_id": "aa0e8400-e29b-41d4-a716-446655440001",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440007",
+    "scope": null,
+    "locale": null,
+    "value": "Generic Brand"
+  },
+  {
+    "entity_type": "PRODUCT",
+    "entity_id": "bb0e8400-e29b-41d4-a716-446655440001",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440003",
+    "scope": null,
+    "locale": null,
+    "value": "660e8400-e29b-41d4-a716-446655440001"
+  },
+  {
+    "entity_type": "PRODUCT",
+    "entity_id": "bb0e8400-e29b-41d4-a716-446655440001",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440004",
+    "scope": null,
+    "locale": null,
+    "value": "660e8400-e29b-41d4-a716-446655440007"
+  },
+  {
+    "entity_type": "PRODUCT",
+    "entity_id": "bb0e8400-e29b-41d4-a716-446655440001",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440005",
+    "scope": "ecommerce",
+    "locale": null,
+    "value": 29.99
+  },
+  {
+    "entity_type": "PRODUCT",
+    "entity_id": "bb0e8400-e29b-41d4-a716-446655440002",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440003",
+    "scope": null,
+    "locale": null,
+    "value": "660e8400-e29b-41d4-a716-446655440001"
+  },
+  {
+    "entity_type": "PRODUCT",
+    "entity_id": "bb0e8400-e29b-41d4-a716-446655440002",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440004",
+    "scope": null,
+    "locale": null,
+    "value": "660e8400-e29b-41d4-a716-446655440008"
+  },
+  {
+    "entity_type": "PRODUCT",
+    "entity_id": "bb0e8400-e29b-41d4-a716-446655440002",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440005",
+    "scope": "ecommerce",
+    "locale": null,
+    "value": 29.99
+  },
+  {
+    "entity_type": "PRODUCT",
+    "entity_id": "bb0e8400-e29b-41d4-a716-446655440003",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440003",
+    "scope": null,
+    "locale": null,
+    "value": "660e8400-e29b-41d4-a716-446655440002"
+  },
+  {
+    "entity_type": "PRODUCT",
+    "entity_id": "bb0e8400-e29b-41d4-a716-446655440003",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440004",
+    "scope": null,
+    "locale": null,
+    "value": "660e8400-e29b-41d4-a716-446655440007"
+  },
+  {
+    "entity_type": "PRODUCT",
+    "entity_id": "bb0e8400-e29b-41d4-a716-446655440003",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440005",
+    "scope": "ecommerce",
+    "locale": null,
+    "value": 29.99
+  },
+  {
+    "entity_type": "PRODUCT_MODEL",
+    "entity_id": "aa0e8400-e29b-41d4-a716-446655440002",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440001",
+    "scope": null,
+    "locale": "en_US",
+    "value": "Summer Dress"
+  },
+  {
+    "entity_type": "PRODUCT_MODEL",
+    "entity_id": "aa0e8400-e29b-41d4-a716-446655440002",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440002",
+    "scope": "ecommerce",
+    "locale": "en_US",
+    "value": "Beautiful summer dress perfect for warm weather"
+  },
+  {
+    "entity_type": "PRODUCT_MODEL",
+    "entity_id": "aa0e8400-e29b-41d4-a716-446655440002",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440007",
+    "scope": null,
+    "locale": null,
+    "value": "Fashion Co"
+  },
+  {
+    "entity_type": "PRODUCT",
+    "entity_id": "bb0e8400-e29b-41d4-a716-446655440004",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440003",
+    "scope": null,
+    "locale": null,
+    "value": "660e8400-e29b-41d4-a716-446655440003"
+  },
+  {
+    "entity_type": "PRODUCT",
+    "entity_id": "bb0e8400-e29b-41d4-a716-446655440004",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440004",
+    "scope": null,
+    "locale": null,
+    "value": "660e8400-e29b-41d4-a716-446655440006"
+  },
+  {
+    "entity_type": "PRODUCT",
+    "entity_id": "bb0e8400-e29b-41d4-a716-446655440004",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440005",
+    "scope": "ecommerce",
+    "locale": null,
+    "value": 59.99
+  },
+  {
+    "entity_type": "PRODUCT",
+    "entity_id": "bb0e8400-e29b-41d4-a716-446655440005",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440003",
+    "scope": null,
+    "locale": null,
+    "value": "660e8400-e29b-41d4-a716-446655440003"
+  },
+  {
+    "entity_type": "PRODUCT",
+    "entity_id": "bb0e8400-e29b-41d4-a716-446655440005",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440004",
+    "scope": null,
+    "locale": null,
+    "value": "660e8400-e29b-41d4-a716-446655440007"
+  },
+  {
+    "entity_type": "PRODUCT",
+    "entity_id": "bb0e8400-e29b-41d4-a716-446655440005",
+    "attribute_id": "550e8400-e29b-41d4-a716-446655440005",
+    "scope": "ecommerce",
+    "locale": null,
+    "value": 59.99
+  }
+]

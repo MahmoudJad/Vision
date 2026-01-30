@@ -1,0 +1,120 @@
+[
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440001",
+    "code": "name",
+    "type": "TEXT",
+    "backend_type": "STRING",
+    "is_localizable": true,
+    "is_scopable": false,
+    "group_code": "general",
+    "labels": {
+      "en_US": "Name",
+      "ar_EG": "الاسم"
+    },
+    "config": null
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440002",
+    "code": "description",
+    "type": "TEXTAREA",
+    "backend_type": "STRING",
+    "is_localizable": true,
+    "is_scopable": true,
+    "group_code": "general",
+    "labels": {
+      "en_US": "Description",
+      "ar_EG": "الوصف"
+    },
+    "config": null
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440003",
+    "code": "color",
+    "type": "SIMPLE_SELECT",
+    "backend_type": "OPTION",
+    "is_localizable": false,
+    "is_scopable": false,
+    "group_code": "variation",
+    "labels": {
+      "en_US": "Color",
+      "ar_EG": "اللون"
+    },
+    "config": null
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440004",
+    "code": "size",
+    "type": "SIMPLE_SELECT",
+    "backend_type": "OPTION",
+    "is_localizable": false,
+    "is_scopable": false,
+    "group_code": "variation",
+    "labels": {
+      "en_US": "Size",
+      "ar_EG": "المقاس"
+    },
+    "config": null
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440005",
+    "code": "price",
+    "type": "PRICE",
+    "backend_type": "FLOAT",
+    "is_localizable": false,
+    "is_scopable": true,
+    "group_code": "pricing",
+    "labels": {
+      "en_US": "Price",
+      "ar_EG": "السعر"
+    },
+    "config": {
+      "currency": "USD",
+      "min": 0
+    }
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440006",
+    "code": "weight",
+    "type": "NUMBER",
+    "backend_type": "FLOAT",
+    "is_localizable": false,
+    "is_scopable": false,
+    "group_code": "physical",
+    "labels": {
+      "en_US": "Weight",
+      "ar_EG": "الوزن"
+    },
+    "config": {
+      "unit": "kg",
+      "min": 0
+    }
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440007",
+    "code": "brand",
+    "type": "TEXT",
+    "backend_type": "STRING",
+    "is_localizable": false,
+    "is_scopable": false,
+    "group_code": "general",
+    "labels": {
+      "en_US": "Brand",
+      "ar_EG": "العلامة التجارية"
+    },
+    "config": null
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440008",
+    "code": "material",
+    "type": "MULTI_SELECT",
+    "backend_type": "OPTIONS",
+    "is_localizable": false,
+    "is_scopable": false,
+    "group_code": "physical",
+    "labels": {
+      "en_US": "Material",
+      "ar_EG": "المادة"
+    },
+    "config": null
+  }
+]

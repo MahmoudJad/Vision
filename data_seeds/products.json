@@ -1,0 +1,32 @@
+[
+  {
+    "id": "bb0e8400-e29b-41d4-a716-446655440001",
+    "sku": "TSHIRT-RED-M",
+    "product_model_id": "aa0e8400-e29b-41d4-a716-446655440001",
+    "enabled": true
+  },
+  {
+    "id": "bb0e8400-e29b-41d4-a716-446655440002",
+    "sku": "TSHIRT-RED-L",
+    "product_model_id": "aa0e8400-e29b-41d4-a716-446655440001",
+    "enabled": true
+  },
+  {
+    "id": "bb0e8400-e29b-41d4-a716-446655440003",
+    "sku": "TSHIRT-BLUE-M",
+    "product_model_id": "aa0e8400-e29b-41d4-a716-446655440001",
+    "enabled": true
+  },
+  {
+    "id": "bb0e8400-e29b-41d4-a716-446655440004",
+    "sku": "DRESS-BLACK-S",
+    "product_model_id": "aa0e8400-e29b-41d4-a716-446655440002",
+    "enabled": true
+  },
+  {
+    "id": "bb0e8400-e29b-41d4-a716-446655440005",
+    "sku": "DRESS-BLACK-M",
+    "product_model_id": "aa0e8400-e29b-41d4-a716-446655440002",
+    "enabled": true
+  }
+]
