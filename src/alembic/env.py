@@ -18,6 +18,7 @@ from src.model.family_variants import FamilyVariant
 from src.model.parent_product import ProductModel
 from src.model.attributes import Attribute, AttributeOption
 from src.model.product_values import ProductValue
+from src.model.category import Category
 # Note: category.py is currently empty
 
 # this is the Alembic Config object, which provides

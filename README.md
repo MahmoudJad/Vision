@@ -58,13 +58,13 @@ Vision fits into the distributed system as follows:
    ```bash
    docker-compose -f docker/docker-compose.yml up -d
    ```
+   
+   The startup process will automatically:
+   - Run database migrations
+   - Seed the database with initial data
+   - Start the FastAPI application
 
-3. **Run database migrations**
-   ```bash
-   docker-compose -f docker/docker-compose.yml exec vision alembic upgrade head
-   ```
-
-4. **Access the application**
+3. **Access the application**
    - API: http://localhost:8000
    - API Documentation: http://localhost:8000/docs
    - PgAdmin: http://localhost:5050 (admin@admin.com / root)
@@ -91,7 +91,55 @@ HOST=0.0.0.0
 PORT=8000
 ```
 
-### Development Commands
+---
+
+## 🌱 Database Seeding
+
+Vision includes a comprehensive database seeding system with sample data for testing and development.
+
+### Automatic Seeding
+
+The database is automatically seeded when you run `docker-compose up`. The seed data includes:
+
+- **8 Attributes** (name, description, color, size, price, weight, brand, material)
+- **12 Attribute Options** (color options, size options, material options)
+- **2 Families** (clothing, electronics)
+- **2 Family Variants** (clothing with color/size variations, electronics simple)
+- **4 Categories** (Apparel → Men's/Women's Clothing, Electronics)
+- **2 Product Models** (Classic T-Shirt, Summer Dress)
+- **5 Products** (T-shirt variants in different colors/sizes, Dress variants)
+- **Product Values** (Localized names, descriptions, prices, and variant-specific attributes)
+
+### Manual Seeding
+
+```bash
+# Seed the database manually
+docker-compose exec vision python seed_database.py
+
+# Force reseed (skip duplicate checks)
+docker-compose exec vision python seed_database.py --force
+
+# Reset database and reseed from scratch
+docker-compose exec vision bash reset_and_seed.sh
+```
+
+### Seed Data Location
+
+All seed data is stored in JSON files in the `data_seeds/` directory:
+- `attributes.json`
+- `attribute_options.json`
+- `families.json`
+- `family_variants.json`
+- `categories.json`
+- `product_models.json`
+- `products.json`
+- `product_values.json`
+
+See [data_seeds/README.md](data_seeds/README.md) for detailed documentation on customizing seed data.
+
+---
+
+## 🛠️ Development Commands
 
 ```bash
 # View logs
@@ -114,4 +162,10 @@ docker-compose -f docker/docker-compose.yml exec vision alembic revision --autog
 
 # Apply the new migration 
 docker-compose -f docker/docker-compose.yml exec vision alembic upgrade head
+
+# Seed database
+docker-compose -f docker/docker-compose.yml exec vision python seed_database.py
+
+# Reset and reseed database
+docker-compose -f docker/docker-compose.yml exec vision bash reset_and_seed.sh
 ```

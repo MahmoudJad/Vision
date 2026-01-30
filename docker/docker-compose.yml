@@ -5,7 +5,7 @@ services:
       context: ..
       dockerfile: docker/Dockerfile
     container_name: "vision"
-    command: bash -c "alembic upgrade head && uvicorn src.main:app --host 0.0.0.0 --reload"
+    command: bash -c "alembic upgrade head && python seed_database.py && uvicorn src.main:app --host 0.0.0.0 --reload"
     restart: always
     env_file:
       - ../.env

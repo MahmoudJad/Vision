@@ -1,0 +1,24 @@
+[
+  {
+    "id": "aa0e8400-e29b-41d4-a716-446655440001",
+    "sku": "PM-TSHIRT-001",
+    "title": "Classic T-Shirt",
+    "code": "classic_tshirt",
+    "family_variant_id": "880e8400-e29b-41d4-a716-446655440001",
+    "parent_id": null,
+    "category_ids": [
+      "990e8400-e29b-41d4-a716-446655440002"
+    ]
+  },
+  {
+    "id": "aa0e8400-e29b-41d4-a716-446655440002",
+    "sku": "PM-DRESS-001",
+    "title": "Summer Dress",
+    "code": "summer_dress",
+    "family_variant_id": "880e8400-e29b-41d4-a716-446655440001",
+    "parent_id": null,
+    "category_ids": [
+      "990e8400-e29b-41d4-a716-446655440003"
+    ]
+  }
+]

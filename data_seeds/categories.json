@@ -1,0 +1,26 @@
+[
+  {
+    "id": "990e8400-e29b-41d4-a716-446655440001",
+    "name": "Apparel",
+    "description": "Clothing and fashion items",
+    "parent_id": null
+  },
+  {
+    "id": "990e8400-e29b-41d4-a716-446655440002",
+    "name": "Men's Clothing",
+    "description": "Clothing for men",
+    "parent_id": "990e8400-e29b-41d4-a716-446655440001"
+  },
+  {
+    "id": "990e8400-e29b-41d4-a716-446655440003",
+    "name": "Women's Clothing",
+    "description": "Clothing for women",
+    "parent_id": "990e8400-e29b-41d4-a716-446655440001"
+  },
+  {
+    "id": "990e8400-e29b-41d4-a716-446655440004",
+    "name": "Electronics",
+    "description": "Electronic devices and gadgets",
+    "parent_id": null
+  }
+]
